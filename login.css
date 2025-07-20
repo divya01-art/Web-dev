@@ -1,0 +1,449 @@
+body{
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+    background-color: #fcfff0 !important;
+    box-sizing: border-box;
+  }
+  nav {
+    text-align: right;
+    justify-content: right !important;
+    align-items: flex-end;
+    word-spacing: 20px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-left: 20px;
+    margin-top: 0%;
+    transition: all 0.3s ease; /* added transition effect */
+  }
+  .camper:hover{
+    background-color: white; 
+    width:120px;
+    margin-top: 0%;
+    height: 1.5em;
+  }
+  nav.webs a.camps:hover {
+    background-color: white; 
+    width:120px;
+    margin-top: 0%;
+    height: 1.65em;
+  }
+  nav.webs a.travel:hover {
+    background-color: white; 
+    width:100px;
+    margin-top: 0%;
+    height: 1.65em;
+  }
+  nav.webs a.ass:hover {
+    background-color: white; 
+    width:100px;
+    margin-top: 0%;
+    height: 1.65em;
+  }
+
+  nav a {
+    color: rgb(0 0 0 /80%);
+    text-decoration: none;
+    transition: all 0.3s ease; /* added transition effect */
+  }
+  nav a:hover {
+    color: rgb(50, 164, 153);
+    text-decoration: none;
+  }
+  nav.webs {
+    margin-top: 0%;
+    background-color: #d9f3aaf6;
+    padding: 13px;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-decoration: none;
+    transition: all 0.3s ease; /* added transition effect */
+  }
+  div.search{
+    background-color: #8fa762f6;
+    margin-top: 0px;
+    width:98.6%;
+    height: 60px;
+  
+  }
+  .logo-container {
+    display: flex;
+    margin-top: 3px;
+    margin-left: 79px;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Circle background color */
+    border-radius: 50%; /* Makes the container circular */
+    width: 50px; /* Circle width */
+    height: 50px; /* Circle height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+  }
+  
+  .logo {
+    font-family: Wagner Grotesk Pro Regular;
+    font-size: 36px; /* Font size of "C&T" */
+    font-weight: lighter;
+    color: #000;
+  }
+ 
+  
+  /* Search Bar Container */
+  .search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+  }
+  
+  /* Input Field */
+  .searchbar {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 24px;
+    width: 600px;
+    margin-left: 130px;
+  }
+  
+  /* Search Button */
+  .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    width: 90px;
+    margin-left:0%;
+    margin-top: 150px;
+  }
+  /* SVG Icon Styling */
+  .search-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #333;
+  }
+  .search-icon {
+    position: absolute;
+    left: 12px; /* Positions the icon inside the input */
+    top:9px;
+    margin-left:237px;
+    cursor: pointer;
+    transform: translateY(-50%); /* Centers the icon vertically */
+    color: #888; /* Icon color */
+  
+  }
+  .heart{
+    margin-left: 30px;
+    margin-top: 6px;
+  }
+  .heart:hover
+  {
+    fill: red;
+  }
+  .microphone {
+        width: 40px;
+        height: 28px;
+        fill: gray;
+        cursor: pointer;
+        margin-left: -39px;
+  }
+  .microphone:hover {
+        transform: scale(1.2, 1.5); /* Stretch vertically when hovered */
+        fill: blue;
+  }
+  .home-icon {
+        width: 100px;
+        height: 100px;
+        fill: #333;
+        cursor: pointer;
+        transition: transform 0.3s ease, fill 0.3s ease;
+      }
+  .home-icon:hover {
+        fill: #FF6600; /* Change to orange when hovered */
+        transform: scale(1.1); /* Slight enlargement on hover */
+      }
+  .ticons{
+      word-spacing: 40px;
+      margin-left: 130px;
+    }
+
+    #dropdownid{
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        justify-content: space-evenly;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+      }
+       #imgs{
+        padding: 2px;
+        align-items: center;
+       }
+      .dropdown{
+        position: relative;
+        text-align: center;
+        display: inline-block;
+      }
+      /* Initial state of the dropdown text */
+      .dropdown-text{
+        font-size: 20px;
+        cursor: pointer;
+        gap: 40px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-align: center;
+        justify-content: space-evenly;
+      }
+      /* The dropdown content is hidden by default */
+      .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 3px;
+      }
+      /* Show the dropdown content when hovering over the text */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      /* Styling for the dropdown links */
+      .dropdown-content a {
+        color: black;
+        padding: 16px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      /* body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+       */
+      .containerrr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        width: 40%;
+        margin-top: 2%;
+        margin-left: 30%;
+        border-radius: 15px;
+        border: 2px solid grey;
+      }
+      
+      .sign-in-box {
+        /* background: #ffffff; */
+        padding: 25px;
+        /* border-radius: 10px; */
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        width: 350px;
+        border-radius: 2px solid black;
+        text-align: left;
+        justify-content: left;
+        /* margin-left: -20%; */
+      }
+      
+      h2 {
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: xx-large;
+        justify-content: left;
+        margin-left: -20%;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 15px;
+        text-align: left;
+        color: black;
+        text-align: left;
+        margin-left: -20%;
+        padding-bottom: 0px;
+        font-size:22px;
+        font-weight:400;
+        color:#000;
+        text-align:left;
+
+      }
+      
+      form input {
+        width: 140%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: left;
+        margin-top: 2%;
+        margin-left: -20%;
+      }
+      
+      .continue-button {
+        background-color: #006400;
+        color: white;
+        border: none;
+        text-align: center;
+        padding: 10px;
+        width: 60%;
+        margin-left: 24%;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 20px;
+      }
+      
+      .continue-button:hover {
+        background-color: #004d00;
+      }
+      
+      .help-section {
+        margin: 15px ;
+      }
+      
+      #helpButton {
+        background: none;
+        border: none;
+        color: #006400;
+        text-decoration: underline;
+        cursor: pointer;
+        text-align: center;
+        font-size: 15px;
+        margin-left: 38%;
+      }
+      
+      .create-account {
+        margin-top: 20px;
+      }
+      
+      #createAccountButton {
+        background-color: #006400;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 90%;
+        margin-left: 7%;
+      }
+      
+      #createAccountButton:hover {
+        background-color: #004d00;
+      }
+      
+      hr {
+        border: 1px solid #ccc;
+        margin: 20px ;
+      }
+
+
+      footer {
+        background-color: #8fa762f6; 
+        color: whitesmoke;
+        position: absolute;
+        bottom: 0;
+        margin: 0%;
+        padding: 0%;
+        left: 0;
+        margin-right: 0%;
+        box-sizing: border-box;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-bottom: 0%!important;
+        width:100%;
+        height: 288px;
+        top: 120%;
+        right: 0px;
+      
+      }
+      .footer-container {
+        margin-left: 0%;
+        padding-left: 0%;
+        display: flex;
+        width: 90%;
+        margin-right: 0%;
+        /* justify-content: space-between; */
+        gap: 25px;
+        padding: 20px;
+        margin-bottom: 0%;
+        overflow: hidden;
+        /* overflow-wrap: normal; */
+        bottom: 0%;
+      }
+      .foot-section {
+        flex: 1;
+        word-spacing: -1px;
+        padding-left: 0;
+      }
+      .foot-section h2{
+        font-family: Wagner Grotesk Pro Regular;
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: 400;
+      
+      
+      }
+      .foot-section h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-weight: 800;
+        font-family:Inter;
+      
+        /* font-family: Wagner Grotesk Pro Regular; */
+      }
+      .foot-section ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      } 
+      .foot-section ul li {
+        /* margin: 10px 0; */
+        /* margin-top: 9px; */
+        margin-bottom: 7px;
+        font-size: 9px;
+        padding-bottom: 6px;
+      }
+      .foot-section ul li a {
+        text-decoration: underline;
+        color: whitesmoke;
+        font-family: Inter;
+        font-weight: lighter;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 20.98px;
+      
+      }
+      .foot-section ul li a:hover {
+        color: rgb(192, 204, 200);
+      }
+      .foot-bottom {
+        text-align: center;
+        margin-top: 9px; 
+        margin-bottom: 0%;
+        font-size: 20px;
+        border-top: 1px solid #ccc;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        word-spacing: -1px;
+        display: block;
+        margin-left: 0px;
+        bottom: 0%;
+      }  
+      

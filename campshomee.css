@@ -1,0 +1,787 @@
+body{
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+    background-color: #fcfff0 !important;
+    box-sizing: border-box;
+  }
+  nav {
+    text-align: right;
+    justify-content: right !important;
+    align-items: flex-end;
+    word-spacing: 20px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-left: 20px;
+    margin-top: 0%;
+    transition: all 0.3s ease; /* added transition effect */
+  }
+  .camper:hover{
+    background-color: white; 
+    width:120px;
+    margin-top: 0%;
+    height: 1.5em;
+  }
+  nav.webs a.camps:hover {
+    background-color: white; 
+    width:120px;
+    margin-top: 0%;
+    height: 1.65em;
+  }
+  nav.webs a.travel:hover {
+    background-color: white; 
+    width:100px;
+    margin-top: 0%;
+    height: 1.65em;
+  }
+  nav.webs a.ass:hover {
+    background-color: white; 
+    width:100px;
+    margin-top: 0%;
+    height: 1.65em;
+  }
+  nav a {
+    color: rgb(0 0 0 /80%);
+    text-decoration: none;
+    transition: all 0.3s ease; /* added transition effect */
+  }
+  nav a:hover {
+    color: rgb(50, 164, 153);
+    text-decoration: none;
+  }
+  nav.webs {
+    margin-top: 0%;
+    background-color: #d9f3aaf6;
+    padding: 13px;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-decoration: none;
+    transition: all 0.3s ease; /* added transition effect */
+  }
+  div.search{
+    background-color: #8fa762f6;
+    margin-top: 0px;
+    width:98.6%;
+    height: 60px;
+  
+  }
+  
+  .campsimg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 79px;
+    margin-top: 5px;
+}
+  
+  /* Search Bar Container */
+  .search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+  }
+  
+  /* Input Field */
+  .searchbar {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 24px;
+    width: 600px;
+    margin-left: 130px;
+  }
+  
+  /* Search Button */
+  .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    width: 90px;
+    margin-left:0%;
+    margin-top: 150px;
+  }
+  /* SVG Icon Styling */
+  .search-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #333;
+  }
+  .search-icon {
+    position: absolute;
+    left: 12px; /* Positions the icon inside the input */
+    top:9px;
+    margin-left:237px;
+    cursor: pointer;
+    transform: translateY(-50%); /* Centers the icon vertically */
+    color: #888; /* Icon color */
+  }
+  .heart {
+        font-weight: bolder;
+        font-stretch: ultra-expanded;
+        color: rgb(248, 9, 9);
+        cursor: pointer;
+        transition: color 0.3s ease;
+        margin-left: 40px;
+        margin-top: 0px;
+        fill: #e50914;
+  }
+  .heart.liked{
+        color: red;
+        fill: #e50914;
+  }
+  .microphone {
+        width: 40px;
+        height: 28px;
+        fill: gray;
+        cursor: pointer;
+        margin-left: -39px;
+  }
+  .microphone:hover {
+        transform: scale(1.2, 1.5); /* Stretch vertically when hovered */
+        fill: blue;
+  }
+  .home-icon {
+        width: 100px;
+        height: 100px;
+        fill: #333;
+        cursor: pointer;
+        transition: transform 0.3s ease, fill 0.3s ease;
+      }
+  .home-icon:hover {
+        fill: #FF6600; /* Change to orange when hovered */
+        transform: scale(1.1); /* Slight enlargement on hover */
+      }
+  .ticons{
+      word-spacing: 40px;
+      margin-left: 130px;
+    }
+    #dropdownid{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+  }
+  #imgs{
+    padding: 2px;
+    align-items: center;
+  }
+  .dropdown a:hover{
+    background-color: #999;
+  }
+  .dropdown{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+  }
+  /* Initial state of the dropdown text */
+  .dropdown-text{
+    font-size: 20px;
+    cursor: pointer;
+    gap: 40px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  /* The dropdown content is hidden by default */
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 3px;
+  }
+  /* Show the dropdown content when hovering over the text */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* Styling for the dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+   .image {
+    width: 95.5vw; /* Full screen width */
+    height: 50vh; /* Full screen height */
+    overflow: hidden; /* Hides images outside the viewport */
+    position: relative;
+    scroll-behavior: auto;
+    margin-left: 20px;
+    transition: translate 1s ease-in-out;
+    
+  }
+  
+  .image-container {
+    display: flex;
+    animation: slide 8s linear infinite; /* 16s to complete one loop */
+    gap: 20px;
+    
+  }
+  .image-container img {
+    width: 22.5vw; /* Each image takes up 25% of the viewport width */
+    height: 50vh; /* Each image fills the height of the viewport */
+    object-fit: cover; /* Ensures the image covers its area */
+    flex-shrink: 0;
+    animation: zoom-in-sequence 48s infinite;
+  }
+  .image-container img:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .image-container img:nth-child(2) {
+    animation-delay: 3s;
+  }
+  .image-container img:nth-child(3) {
+    animation-delay: 6s;
+  }
+  .image-container img:nth-child(4) {
+    animation-delay: 9s;
+  }
+  .image-container img:nth-child(5) {
+    animation-delay: 12s;
+  }
+  .image-container img:nth-child(6) {
+    animation-delay: 15s;
+  }
+  .image-container img:nth-child(7) {
+    animation-delay: 18s;
+  }
+  .image-container img:nth-child(8) {
+    animation-delay: 21s;
+  }
+  @keyframes slide {
+      0% {
+          transform: translateX(0); 
+      }
+     10% {
+        transform: translateX(0); /* Hold the first image */
+    }
+    20% {
+        transform: translateX(-25%); /* Slide to the second image */
+    }
+    30% {
+        transform: translateX(-25%); /* Hold the second image */
+    }
+    40% {
+        transform: translateX(-50%); /* Slide to the third image */
+    }
+    50% {
+        transform: translateX(-50%); /* Hold the third image */
+    }
+    60% {
+        transform: translateX(-75%); /* Slide to the fourth image */
+    }
+    70% {
+        transform: translateX(-75%); /* Hold the fourth image */
+    }
+    80% {
+        transform: translateX(-100%); /* Slide to the fifth image */
+    }
+    90% {
+        transform: translateX(-100%); /* Hold the fifth image */
+    }
+    100% {
+        transform: translateX(-125%); /* Slide to the sixth image */
+    }
+    110% {
+        transform: translateX(-125%); /* Hold the sixth image */
+    }
+    120% {
+        transform: translateX(-150%); /* Slide to the seventh image */
+    }
+    130% {
+        transform: translateX(-150%); /* Hold the seventh image */
+    }
+    140% {
+        transform: translateX(-175%); /* Slide to the eighth image */
+    }
+    150% {
+        transform: translateX(-175%); /* Hold the eighth image */
+    }
+    160% {
+      transform: translateX(-200%); /* Slide to the duplicate first image (continuation) */
+  }
+  170% {
+      transform: translateX(-200%); /* Hold the duplicate first image */
+  }
+  180% {
+      transform: translateX(-225%); /* Slide to the duplicate second image */
+  }
+  190% {
+      transform: translateX(-225%); /* Hold the duplicate second image */
+  }
+  200% {
+      transform: translateX(-250%); /* Slide to the duplicate third image */
+  }
+}
+  #arrow{
+    text-align: right;
+    padding-right: 20px;
+  }
+    .borderline {
+      background-color: rgb(169, 169, 169);
+      /*padding: 0px !important; /* Remove all padding */
+      height: 50px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 24px;
+      font-weight: bolder;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 0%;
+      padding-top: 0%;
+      font-stretch: wider;
+    }
+    .gridsimg{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 1200px; /* Adjust as necessary */
+      margin: 0 auto;
+    }
+    .image-grids{
+      width: 35%; /* Two items per row */
+      height: 40%;
+      display: flex;
+      justify-content: center;
+    }
+    .bestsell{
+      position: relative;
+      display: inline-block;
+      padding: 9px;
+      background-color: #e50914; /* Red color */
+      color: #fff; /* White text color */
+      /*font-size: 14px;*/
+      font-weight: bolder;
+      text-align: center;
+      --r: .8em; /* control the cutout */
+      border-block: .5em solid #0000;
+      padding-inline: calc(var(--r) + .25em) .5em;
+      line-height: 1.8;
+      clip-path: polygon(0 0,100% 0,100% 100%,0 100%,0 calc(100% - .25em),var(--r) 50%,0 .25em);
+      width: 100px;
+      height: 100%;
+      padding-top: 0%;
+      padding-bottom: 0%;
+    } 
+  .banner{
+    margin-left: 150px;
+    margin-right: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+    .grid{
+      display: flex;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .item{
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgb(0, 0,0,0.1);
+      overflow: hidden;
+    }
+    .item img{
+       width: 100%;
+       display: block;
+    }
+    .ban{
+      display: flex;
+      justify-content: space-between;
+    }
+    .vid{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    footer {
+      background-color: #8fa762f6; 
+      color: whitesmoke;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+      left: 0;
+      box-sizing: border-box;
+      margin-right: 0%;
+      margin-bottom: 0%;
+    }
+    .footer-container {
+      margin-left: 0%;
+      padding-left: 0%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+    }
+    .foot-section {
+      flex: 1;
+      word-spacing: -1px;
+      padding-left: 0;
+    }
+    .foot-section h4 {
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .foot-section ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    } 
+    .foot-section ul li {
+      margin: 10px 0;
+      font-size: 14px;
+      padding-bottom: 1px;
+    }
+    .foot-section ul li a {
+      text-decoration: underline;
+      color: whitesmoke;
+      transition: color 0.3s;
+    }
+    .foot-section ul li a:hover {
+      color: rgb(192, 204, 200);
+    }
+    .foot-bottom {
+      text-align: center;
+      margin-top: 15px; 
+      margin-bottom: 0%;
+      font-size: 12px;
+      border-top: 1px solid #ccc;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      word-spacing: -1px;
+    }  
+
+@media screen and (max-width: 768px) {
+      .image {
+   width: 100vw; /* Full width of the viewport */
+   height: 40vh; /* Reduce height for smaller screens */
+   margin-left: 0; /* Remove the left margin */
+ }
+
+ /* Adjust the image container */
+ .image-container {
+   gap: 10px; /* Reduce the gap between images */
+ }
+
+ /* Adjust individual images to fit within the smaller screen */
+ .image-container img {
+   width: 45vw; /* Each image will take up about 45% of the viewport width */
+   height: 40vh; /* Adjust height to fit proportionally */
+   object-fit: cover; /* Keep images covering their area */
+   animation: zoom-in-sequence 36s infinite; /* Adjust animation speed if needed */
+ }
+
+ /* Adjust the animation for the slide effect on smaller screens */
+ @keyframes slide {
+   0% {
+     transform: translateX(0);
+   }
+   10% {
+     transform: translateX(0);
+   }
+   20% {
+     transform: translateX(-50%); /* Slide to the second image */
+   }
+   30% {
+     transform: translateX(-50%);
+   }
+   40% {
+     transform: translateX(-100%); /* Slide to the third image */
+   }
+   50% {
+     transform: translateX(-100%);
+   }
+   60% {
+     transform: translateX(-150%); /* Slide to the fourth image */
+   }
+   70% {
+     transform: translateX(-150%);
+   }
+   80% {
+     transform: translateX(-200%); /* Slide to the fifth image */
+   }
+   90% {
+     transform: translateX(-200%);
+   }
+   100% {
+     transform: translateX(-250%); /* Slide to the sixth image */
+   }
+   110% {
+     transform: translateX(-250%);
+   }
+   120% {
+     transform: translateX(-300%); /* Slide to the seventh image */
+   }
+   130% {
+     transform: translateX(-300%);
+   }
+   140% {
+     transform: translateX(-350%); /* Slide to the eighth image */
+   }
+   150% {
+     transform: translateX(-350%);
+   }
+   160% {
+     transform: translateX(-400%); /* Slide to the duplicate first image */
+   }
+   170% {
+     transform: translateX(-400%);
+   }
+   180% {
+     transform: translateX(-450%); /* Slide to the duplicate second image */
+   }
+   190% {
+     transform: translateX(-450%);
+   }
+   200% {
+     transform: translateX(-500%); /* Slide to the duplicate third image */
+   }
+   /* Continue as needed */
+ }
+ .vid iframe {
+   width: 100%;
+   height: 250px;
+   margin: 0 auto;
+   margin-left: 10px !important;
+   margin-right: 10px !important;
+ }
+
+ .grid {
+   display: flex;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   gap: 0px;
+ }
+ 
+ .item {
+   width: 100%;
+   flex-shrink: 0; /* Add this to prevent images from shrinking */
+   animation: slide 12s infinite;
+   margin-right: 0;
+ }
+ 
+ @keyframes slide {
+   0% {
+     transform: translateX(0);
+   }
+   25% {
+     transform: translateX(0);
+   }
+   30% {
+     transform: translateX(-100%);
+   }
+   55% {
+     transform: translateX(-100%);
+   }
+   60% {
+     transform: translateX(-200%);
+   }
+   85% {
+     transform: translateX(-200%);
+   }
+   90% {
+     transform: translateX(-300%);
+   }
+   100% {
+     transform: translateX(-300%);
+   }
+ }
+ .gridsimg {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   margin-left: 0%;
+   flex-wrap: nowrap;
+ }
+ 
+ .image-grids {
+   width: 100%; /* subtract the gap from the width */
+   flex-shrink: 0;
+   animation: slideimage 6s infinite;
+   display: inline-block;
+   margin-right: 30px;
+   vertical-align: top;
+ }
+ @keyframes slideimage {
+   0% {
+     transform: translateX(200%);
+ }
+ 100% {
+     transform: translateX(-200%);
+ 
+   }
+ }
+ }
+ .searchfidaa {
+  display: none; /* Hide the logo and dropdown links on desktop/laptop */
+}
+
+.logo-containerr {
+  position: relative;
+  display: inline-block;
+  background-color: #8fa762f6; 
+  width: 100%;
+  height: 20px;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.dropdown-linkss {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 100;
+}
+
+.dropdown-linkss a {
+  display: block;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-linkss a:hover {
+  background-color: #ddd;
+}
+
+/* Hover over the logo to show the dropdown links */
+.logo-containerr:hover .dropdown-linkss {
+  display: block;
+}
+@media (max-width: 420px) {
+  /* Hide the main navigation bar on small screens */
+  .webs {
+    display: none; /* Hide the horizontal navigation */
+  }
+
+  /* Center the logo with a background color */
+  .searchfidaa {
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    
+    padding: 10px 0;
+  }
+
+  .logo-containerr {
+    display: inline-block;
+    margin: 0 auto;
+    
+  }
+
+  /* Make the links appear below the logo on small screens */
+  .dropdown-linkss {
+    position: static;
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* When hovering over the logo, show the dropdown with links */
+  .logo-containerr:hover .dropdown-linkss {
+    display: block;
+  }
+  .gridsimg {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin: 0% !important;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0% !important;
+    margin: initial !important;
+    flex-wrap: nowrap;
+  }
+  
+  .image-grids {
+    width: 100%; /* subtract the gap from the width */
+    flex-shrink: 0;
+    animation: slideimage 8s infinite;
+    display: inline-block;
+    margin-right: 97px;
+    vertical-align: top;
+    animation-fill-mode: backwards;
+    
+  }
+  @keyframes slideimage {
+    0% {
+      transform: translateX(200%);
+  }
+  10% {
+      transform: translateX(200%);
+  }
+  20% {
+      transform: translateX(75%);
+  }
+  30% {
+      transform: translateX(75%);
+  }
+  40%{
+    transform: translateX(-50%);
+  }
+  50%{
+    transform: translateX(-50%);
+  }
+  60% {
+      transform: translateX(-177%);
+  }
+  70% {
+      transform: translateX(-177%);
+  }
+  100%{
+    transform: translate(200%);
+  }
+  }
+   
+}
+       
+    

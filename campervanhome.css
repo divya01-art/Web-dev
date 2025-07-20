@@ -1,0 +1,66 @@
+nav {
+    text-align: right;
+    justify-content: right !important;
+    align-items: flex-end;
+    word-spacing: 20px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-top: 0%;
+    /* transition: all 0.3s ease; added transition effect */
+  }
+nav a:hover {
+    color: rgb(50, 164, 153);
+    text-decoration: none;
+  }
+nav.webs {
+    margin-top: 0%;
+    background-color: rgb(172, 225, 246);
+    padding: 13px;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-decoration: none;
+    /* transition: all 0.3s ease; added transition effect */
+  }
+  a:active{
+    color: rgb(103, 177, 241);
+  }
+  .image {
+    height: 90px;
+    margin-left: 200px;
+    float: left;
+  }
+  body {
+    margin: 0%;
+  }
+  nav a {
+    color: rgb(0 0 0 /80%);
+    text-decoration: none;
+    /* transition: all 0.3s ease; */
+    padding: 10px 15px; 
+    display: inline-block; 
+  }
+nav.webs a.camps:hover {
+    background-color: white;
+    border-radius: 5px;
+    
+}
+nav.webs a.travel:hover {
+    background-color: white; 
+    border-radius: 5px;
+}
+nav.webs a.camper:hover {
+    background-color: white;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border-radius: 5px;
+  }
+nav.webs a.ass:hover {
+    background-color: white; 
+    border-radius: 5px;
+  }
+.firstpara{
+    padding-top: 5%;
+  }

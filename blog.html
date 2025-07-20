@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link href="blog.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="webs">
+            <a href="./campervanhome.html" class="camper">Campervahn</a>
+            <a href="https://travelkeet.com/" class="travel">Travelkeet</a>
+            <a href="http://127.0.0.1:5500/campshomee.html" class="camps">Camps&Trials</a>
+            <a href="https://dictionary.cambridge.org/dictionary/english/association" class="ass">Association</a>
+            </nav></div>
+            <div class="searchfidaa"></div>
+
+<div class="search">
+    <div class="logo-container">
+        <div class="logo">C&T</div>
+      </div>
+            <span class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="search-btn" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zm-5.442 1.018a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"/>
+            </svg>
+            </span>
+            <input type="text"  class="searchbar" >
+            <svg class="microphone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g>
+                          <!-- Microphone Body -->
+            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm4.25-3c0 2.45-1.79 4.43-4.25 4.9V19h2v2h-6v-2h2v-3.1c-2.46-.47-4.25-2.45-4.25-4.9H5c0 3.18 2.37 5.78 5.5 5.98V20h3v-1.02c3.13-.2 5.5-2.8 5.5-5.98h-1.75z"/>
+            </g></svg>
+            <div class="heart" onclick="toggleHeart(this)">
+              <img src="heartblack.png" width="23px" >
+            </div>
+            <div class="ticons">
+            <svg width="50" height="50" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle cx="35" cy="35" r="35" fill="white"/>
+            <g opacity="0.7">
+            <rect width="40" height="40" transform="matrix(-1 0 0 1 55 15)" fill="url(#pattern0_237_153)"/>
+            </g>
+            <defs>
+            <pattern id="pattern0_237_153" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_237_153" transform="scale(0.0078125)"/>
+            </pattern>
+            <image id="image0_237_153" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAJ9UlEQVR4nO1da6hVRRT+zrlXzVIvJhiKaJAWCfkjEbSMIIrMUnpIYt4eaKEQSYKUlan0J6mkH/ZDpAfYw6Ks0CiDhFKLkCwl6fEnMtAstNLESu89N0bXotW4j2dm79l7zzlnfTBsPffMXmuvWbPmmzWz5wAKhUKhUCgUCoVCoVAoFGFRBdChBb42aImGV7SpDVnxcwBcCeAOLXCxwRwA3QBuBjCSbFhBk4EVngFgL4AagD4t8LXBHwCeBHCuZdem6Pl3iQcxDqAF3jboJfttFJyg0gyNPwbAL6R8j/Z8ZIl+J+l6P9k2anLIyi3TxkeoIY+jwFcA+sccBVipgQC+tpTXgkw2YA41LeYowErNtJTWgsw24GH05ZinhqzUGxr+EdrpuTP9DuBCy95RgJUZB+BPjQDIMwo8FOMwkIb86bQQ/7NB05JBSf5M0kfJH9qLDKYhfyZCLAUwC8DcNk4RzyUbLHWMmlGSQR/yx2Hsc1EvijBWEvjZq2STRtEzOjLoS/7YOR6gegN0iRjGBiCbuPCnqMigD/ljxzAp4hFUr517PywbjBDp81ozkEFf8sfOsTam8SsSsC3WOkaBKMigD/mTf7uK6qkD/Ae2xVRhq1rsZDAN+dsm6mv4T7bFtmYgg77kjx9mQUzz18jANlng4AClk8E05O8AgOFUT3v/mWCbDCdbRUsG05K/NVRPe399sG3WxEwG05A/8yCTqZ6Sv/pg20wWjR8dGfQhf/y3rUUo1mLY6jG8FkYG05K/eVRPw39jsI3mxUgG05C/nwAMo3pK/hqDbTSMbBcNGUxL/lbn4JlGl06KSFX6d5HOVclZPttqdUxkMA35OwFgYuCx6Wz3KYIEVQuQz/e5nGwYBRlMQ/62UJ1KYB1GA1gC4CUqS+gz+Z08UC1QPttsSwxkMC35M++4hQpJbBCzieKw0IH1+I3+Jr8bEpWC5bPNumMggz7kjxX9AUBXIINUxfAjcwuycIPMtOqEQLUE+WyzLrJlIyeQZLCfdY8gihiis9uD/K0K5Iksvz89XD0H7MmJDVdKlM+2W+VIBrlcY9XPBH6I82mMOVv458//BjAhUE/g+lMaLJXWhHNOCSTblt9bsHyuP4Fs6jr0mhdzudNmBnvRNAfPYw/dnMNYeLtHGLzdqtvM8it03ewx/N6ZhwPc5uCBrNzCgAp0epAhlj8/B/nzHRogT/kLHeRz25i2CjYE8E2uThBUzwCLLOWzgO/xoIMB+FXqlTnIX2nJKFr+ww7yuVwb0gF4HLoIwF8NHICVWxdQAb7HOgcDsHNsyoEEbvKIAHnIf6uBfJl8uzTkTKgizvppNB3hz78LdKwJ1zX3+t5hCKiJo1XGBJQ/hu7ZaAjMS745K+hQA/ly482gALITFXnTYxy6JUAU4Lq3Ohjf7oUrAoThTiv89xQsn5//EY/o834eyTB+iEUOinAP/TRjQkLOvz9z6P22A5ps3fgMTthB1/FW5q9o+eMc3xfgNnk05AwgKRV8zEGZ3gC9gOus8Gh8W/4nIhz6NEIHXQfRPcqSb1ZeP/IY+k7msPh2Ro/c6BgOOU8uN4NUPU4VlZsi0hQ22HsiJd3oBM4O8fcuquvb+Fnky2cfDOAdR/ncFh8ntFcwsGI3OIZDmRl7zGp8NgSvp9uG6aB1h7Nl3nwaYQ8dVmkbppLwf9B392Ro/KzyzZ7AXR7y7Qxg7juvPvCIAqzcdgDXC16QhH70ne3iwbKeNcT1/wGwgTKaXQmG76K/baDvZnG8NPKHALgOwCsi7evT+Ltopsb3ywUyL+6Sm7aVrNGC0jMU3mdQmUef7bYiR1bjy0aQ6wgHaNPl61S20mfyO7UC5Ztxfn9K+WwnM1MqpPezEzzhGAWkoq4s2rXxfRuqkQ41T8crWz7bfn0ZL4aYcP2hpxPwQ560HrSXPvMxpn3GUJpe2UMlbf0y5bPNvwFwQZEOIKPASHEoZJFHwrLBDgL42fqsaPkHS5DfK3INk6w2KQwscCyAbwt0An74Y/Q69RUAjhYov4euR0n2VJEbKeJkVJZxhEhjqe9bsODRlPljA9VyNv6vYtcL6MyB/QU4QQ9d94tzDkC6FHE4Nt/7IK3OyjYoDRwJBokTLvLwejndkSnWDrFaKaePIXtjrzWdHZsg3+j0RU7y+0SnMmnxi4X8KFCxNk5yb8waCXqsefRTIrVarfPrJMvEkMBEKwtJq9H/zW7ox8VcO0m+0e1pK4+QNSKw/OO0KDUwQX40TsAe+aoVsnwMbjeYmR28a+W4Kw2c8BIALySsW/Bsg6djNVHk32Qdc48X6Z6u8idSGvdkANbPNjTvY/ik1EsBK/ZaCgewyz4AzwmWy/dvNNWR3zGLV8tp2OA3bFzKCaqznO5hN3A92N+ZRM+wL2MU7KNOJW0cJaqeEaBGU5kfAewkL19O7HawdV+fB7cbopN21t4L4FkAbwPYAeBLKjvoM/O3+wBcZq1gujiebQcpfzBt01pOz7iTnvmwQzRoSQfghzZj9SgaV5PWCLKGOzksJenan0o9GR0Zkyv1HLcfPfMoi6+0nQMcoUUQuTLGb92GBt+70XJwZ04ZNfkWMd9/CNlAHaDNzg6o0FUdwIoA7YIKXdUB1AGgQ4DVK9oBFbpqBNAIAI0AVq9oB1ToqhEgcATgBFBHTqUa+HUvdYCADlBkgqSasb46QJ1EUNYGMQctT8/xR56miwOvs2YoDTQCZHQArjOA8uz8AmWe5RDJGhBAb3WAQBFgvVjureVceq2duGmgDhBgCOCc/j1i30ARGzNrYp3/bksXdYCMi0G+BoR4ebLIXck9dDWy00AjQCAHOK+kbdk1uh4kHdLqrxwgowO4GDBPBzhSgP5ttR/AFeoAkUIdwA0aAUqKAK5TvT4dAtJBI4AbNAIUGAHkoVWz6Ej3eqneufQdfs2t3ts9SgKbKAL4sOhqk+tfOmI2oHlZhbdk11vu7ef4Yos6QBM6gEaAAqAO4AYdAjQCnIJyAB0CoCTwdGdQDgCdBThDSWCkUBLoBiWBSgJPQUmgkkAoCTzdGZQEQkmgM5QERgolgW5QEqgk8BSUBCoJhJLA051BSSCUBDpDSWALkcChVIePcHMpfIjj0Ag2hAwtSH/dESSgEaBFIsBx+qn12Q02ayZt3pxNdY+XuCn0eAH6t2QE0AJnG7S8A2R9X9/Hmcq8Zy2lrJZ3AC1QB1AngEYAdQK0zhDwPCktfzJFC1LZgG1obBrVD0UlgRMci9UBENoBFls2jjoCjBZHtygRRJDfCRxt2ThasILdYpqT99FtrVr66Npt2TZ6sKI30m8L+86tteCUzfYCuMmyadNA/pij+Y3dOTke4dpqZQ7ZLOlHKpsKoU7XbldUmrnxJfI8wr1VS7XsRlMoFAqFQqFQKBQKhULRWvgXzRJp6x5QaQcAAAAASUVORK5CYII="/>
+            </defs>
+            </svg>
+            <svg width="50" height="50" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle cx="35" cy="35" r="35" fill="white"/>
+            <g opacity="0.7">
+            <rect x="15" y="15" width="40" height="40" fill="url(#pattern0_237_145)"/>
+            </g>
+            <defs>
+            <pattern id="pattern0_237_145" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_237_145" transform="scale(0.0078125)"/>
+            </pattern>
+            <image id="image0_237_145" width="128" height="128" xlink:href="data:image/png;base64,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"/>
+            </defs>
+            </svg>
+            <svg width="50" height="50" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle cx="35" cy="35" r="33.5" fill="white" stroke="#FDFDFD" stroke-width="3"/>
+            <rect opacity="0.7" width="40" height="40" transform="matrix(-1 0 0 1 55 15)" fill="url(#pattern0_237_150)"/>
+            <defs>
+            <pattern id="pattern0_237_150" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_237_150" transform="scale(0.0078125)"/>
+            </pattern>
+            <image id="image0_237_150" width="128" height="128" xlink:href="data:image/png;base64,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"/>
+            </defs>
+            </svg></div></div>
+            <div id="dropdownid">
+                <div class="dropdown">
+                  <span class="dropdown-text">Tents</span>
+                  <div class="dropdown-content">
+                    <a href="#">ridge tent</a>
+                    <a href="#">pop-up tent</a>
+                    <a href="#">tunnel tent</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <span class="dropdown-text">Water</span>
+                  <div class="dropdown-content">
+                    <a href="#">Fishing</a>
+                    <a href="#">Kayaking</a>
+                    <a href="#">Beach volley ball</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <span class="dropdown-text">snow</span>
+                  <div class="dropdown-content">
+                    <a href="#">Skiing</a>
+                    <a href="#">Sledding</a>
+                    <a href="#">Snowshoeing</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <span class="dropdown-text">Furniture</span>
+                  <div class="dropdown-content">
+                    <a href="#">sofa</a>
+                    <a href="#">Bed</a>
+                    <a href="#">wardrobe</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <span class="dropdown-text">Cooking</span>
+                  <div class="dropdown-content">
+                    <a href="#">Utensils</a>
+                    <a href="#">Stove</a>
+                    <a href="#">Fire</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <span class="dropdown-text">Accessories</span>
+                  <div class="dropdown-content">
+                    <a href="#">Boots</a>
+                    <a href="#">Backpacks</a>
+                    <a href="#">Fishing</a>
+                  </div>
+                </div>
+                <hr style="border: 1.5px solid #000;height:23px;margin: 1px;">
+                <div class="dropdown">
+                  <span class="dropdown-text">checklist</span>
+                  <div class="dropdown-content">
+                    <!-- <a href="#">Hiking</a>
+                    <a href="#">Swimming</a>
+                    <a href="#">Fishing</a> -->
+                  </div>
+                </div>
+              </div>
+              <p style="text-align: center;font-weight:bolder;font-size:larger">BLOG</p>
+              <img src="Rectangle 370.png" width="70%" height="490vh" style="margin-left: 15%;">
+      
+    <div class="tags-container">
+        <div class="tag">#FamilyCamping</div>
+        <div class="tag">#Backpacking</div>
+        <div class="tag">#Beginner Friendly</div>
+        <div class="tag">#Campfire Cooking</div>
+        <div class="tag">#Eco-Friendly Gear</div>
+        <div class="tag">#Budget-Friendly Destinations</div>
+    </div>
+<div class="late">
+    <p style="margin-left: 15%;font-weight:bold;font-size:22px;margin-top:0%;">Latest Post</p>
+    <img src="Rectangle 374.png" width="30%" height="290vh" >
+    <img src="Rectangle 384.png" width="30%" height="290vh">
+    <p style="margin-top: -7%;font-weight:bold;padding-top:0;margin-left:19.4%;font-size:x-large;">Offbeat Destinations for Adventure Seekers</p>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p> -->
+   <button onclick="myFunction()" id="myBtn" style="margin-left: 29%;margin-top:-2%;">Read more</button>
+   <p style="margin-top: -5.3%;font-weight:bold;padding-top:0;margin-left:56%;font-size:x-large;">National Parks Camping Guide</p>
+   <button onclick="myFunction()" id="myBtn" style="margin-left: 63.5%;margin-top:0%;">Read more</button>
+</div>
+<div class="pop">
+    <p style="margin-left: 15%;font-weight:bold;font-size:22px;margin-top:4%;">Popular Post</p>
+    <img src="Rectangle 387.png" width="30%" height="290vh" >
+    <img src="Rectangle 375.png" width="30%" height="290vh">
+    <p style="margin-top: -7%;font-weight:bold;padding-top:0;margin-left:21%;font-size:x-large;">Top Lessons I Learned on a Solo Hike</p>
+    <button onclick="myFunction()" id="myBtn" style="margin-left: 29%;margin-top:0%;">Read more</button>
+     <p style="margin-top: -6%;font-weight:bold;padding-top:0;margin-left:53.5%;font-size:x-large;">Top 10 Camping Tents for Every Budget</p>
+    <button onclick="myFunction()" id="myBtn" style="margin-left: 63%;margin-top:0%;">Read more</button>
+ 
+</div>
+<footer>
+    <div class="footer-container">
+    <div class="foot-section">
+        <h2><b>CAMPS&TRIAL</b></h2>
+    </div>
+    <div class="foot-section">
+        <h4>Get to know us</h4>
+        <ul>
+            <li><a href="#">About Camps & Trails</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Releases</a></li>
+    </div>
+    <div class="foot-section">
+        <h4>Connect with us</h4>
+        <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li></ul>
+    </div>
+    <div class="foot-section">
+        <h4>Make Money with Us</h4><ul>
+        <li><a href="#">Sell on Camps & Trails</a></li>
+        <li><a href="#">Protect and Build Your Brand</a></li>
+        <li><a href="#">Became an Affiliate</a></li>
+        <li><a href="#">Advertise Your Products</a></li></ul>
+    </div>
+    <div class="foot-section">
+        <h4>Let Us Help You</h4><ul>
+        <li><a href="#">Your account</a></li>
+        <li><a href="#">Returns Center</a></li>
+        <li><a href="#">100% Purchase Protection</a></li>
+        <li><a href="helpdesk.html">Help</a></li></ul>
+    </div></div>
+<div class="foot-bottom">
+        <p>© 2024 Copyright <span style="font-weight: bold;">Camps & Trails</span></p>
+</div> 
+</footer>
+
+
+    
+</body>
+</html>
